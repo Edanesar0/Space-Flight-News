@@ -56,13 +56,17 @@ dependencies {
     implementation(libs.androidx.fragment.ktx)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.dagger)
-    kapt(libs.dagger.compiler)
     implementation(libs.hilt.android)
-    kapt(libs.hilt.android.compiler)
     implementation(libs.picasso)
+
+    kapt(libs.dagger.compiler)
+    kapt(libs.hilt.android.compiler)
+
+    testImplementation(libs.junit)
+    testImplementation(libs.androidx.junit)
+    testImplementation(libs.androidx.espresso.core)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.coroutines.test)
 
 }
